@@ -4,6 +4,7 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  background-color: #E8961F;
 }
 .nav-bar,
 .footer-bar {
@@ -13,69 +14,4 @@ h1 {
 body,
 .btn {
   font-family: "Montserrat", sans-serif;
-}
-
-html {
-  /* position: fixed; */
-  /* top: 0; */
-  /* right: 0; */
-  bottom: 0;
-  /* left: 0;  */
-  background-image: linear-gradient(
-    to bottom,
-    rgb(231, 145, 47),
-    rgb(231, 99, 47)
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  z-index: -2;
-}
-html::after {
-  content: "";
-  animation: grain 8s steps(10) infinite;
-  background-image: url(src/assets/paper_1/paper_1_@2X.png);
-  height: 300%;
-  left: -50%;
-  width: 300%;
-  top: -100%;
-  opacity: 0.15;
-  position: fixed;
-  z-index: -1;
-}
-@keyframes grain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, 5%);
-  }
-  30% {
-    transform: translate(7%, -25%);
-  }
-  40% {
-    transform: translate(-5%, 25%);
-  }
-  50% {
-    transform: translate(-15%, 10%);
-  }
-  60% {
-    transform: translate(15%, 0%);
-  }
-  70% {
-    transform: translate(0%, 15%);
-  }
-  80% {
-    transform: translate(3%, 35%);
-  }
-  90% {
-    transform: translate(-10%, 10%);
-  }
-}
-html {
-  background-color: rgb(231, 99, 47);
 }

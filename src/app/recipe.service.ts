@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class RecipeService {
-  appId: string = 'ca347ff4';
-  appKey: string = 'c0bf23a0689bd3e32d80dd41405a2e8a';
+  appId: string = 'e99ecff1';
+  appKey: string = '8df5af67eab672f5f5ba1f3a28f68503';
   edamamSearchUrl: string = 'https://api.edamam.com/search';
   favorites: any[] = [];
 

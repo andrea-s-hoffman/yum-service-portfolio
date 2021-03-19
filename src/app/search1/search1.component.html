@@ -1,28 +1,62 @@
 <section class="form-containah">
-  <form
-    class="search-form"
-    #searchForm="ngForm"
-    (ngSubmit)="emitSearchTerm(searchForm)"
-  >
-    <label for="q">Find Recipes</label>
-    <input class="inputs" type="text" name="q" id="q" required ngModel />
-    <label for="cookTime">Cook Time</label>
-    <select class="inputs" name="cookTime" id="cookTime" ngModel>
-      <option value=""></option>
-      <option value="1-30">0-30 minutes</option>
-      <option value="30-60">30-60 minutes</option>
-      <option value="60-10001">60+ minutes</option>
-    </select>
-    <label for="dietType">Diet</label>
-    <select class="inputs" name="dietType" id="dietType" ngModel>
-      <option value=""></option>
-      <option value="low-carb">Low-carb</option>
-      <option value="balanced">Balanced</option>
-      <!-- <option value="high-fiber">High-fiber</option> -->
-      <option value="high-protein">High-protein</option>
-      <!-- <option value="low-sodium">Low-sodium</option> -->
-      <option value="low-fat">Low-fat</option>
-    </select>
-    <button class="btn" [disabled]="searchForm.invalid">search</button>
-  </form>
+
+
+<form id="app-cover"     class="search-form"
+#searchForm="ngForm"
+(ngSubmit)="emitSearchTerm(searchForm)">
+
+        <label for="q">Find Recipes</label>
+        <input class="inputs" type="text" name="q" id="q" required ngModel />
+
+            <div id="select-box">
+                    <input type="checkbox" id="options-view-button">
+                    <div id="select-button" class="brd">
+                            <div id="selected-value">
+                                <span>Cook Time</span>
+                            </div>
+                            <div id="chevrons">
+                                    <i class="fas fa-chevron-up"></i>
+                                    <i class="fas fa-chevron-down"></i>
+                            </div>
+                    </div>
+                    <div id="options">
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="1-30" ngModel>
+                                    <!-- <input class="s-c bottom" type="radio" name="platform" value="1-30" ngModel> -->
+                                    <i class="fab fa-codepen"></i>
+                                    <span class="label">30 minutes or less</span>
+                                    <span class="opt-val">30 minutes or less</span>
+                            </div>
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="30-60" ngModel>
+                                    <!-- <input class="s-c bottom" type="radio" name="platform" value="30-60" ngModel> -->
+                                    <i class="fab fa-dribbble"></i>
+                                    <span class="label">30 - 60 minutes</span>
+                                    <span class="opt-val">30 - 60 minutes</span>
+                            </div>
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="60-100001" ngModel>
+                                    <!-- <input class="s-c bottom" type="radio" name="platform" value="60-100001" ngModel> -->
+                                    <i class="fab fa-behance"></i>
+                                    <span class="label">60+ minutes</span>
+                                    <span class="opt-val">60+ minutes</span>
+                            </div>
+                            <div id="option-bg"></div>
+                    </div>
+            </div>
+
+                <label for="dietType">Diet</label>
+                <select class="inputs" name="dietType" id="dietType" ngModel>
+                <option value=""></option>
+                <option value="low-carb">Low-carb</option>
+                <option value="balanced">Balanced</option>
+                <!-- <option value="high-fiber">High-fiber</option> -->
+                <option value="high-protein">High-protein</option>
+                <!-- <option value="low-sodium">Low-sodium</option> -->
+                <option value="low-fat">Low-fat</option>
+                </select>
+
+                <button class="btn" [disabled]="searchForm.invalid">search</button>
+
+    </form>
 </section>
