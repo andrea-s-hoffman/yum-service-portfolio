@@ -1,4 +1,4 @@
-*
+/* *
 {
     user-select: none;
 }
@@ -28,10 +28,10 @@ body
     background-color: transparent;
     /* border: 1px solid #e2eded;
     border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded; */
-}
+/* } */
 
 
-#app-cover
+/* #app-cover
 {
     position: absolute;
     top: 0;
@@ -126,7 +126,7 @@ body
     margin: 0 auto;
     background-color: transparent;
     /* border-radius: 4px; */
-    border: none;
+    /* border: none;
 }
 
 #options-view-button:checked ~ #options
@@ -454,15 +454,7 @@ input[type="radio"]
   box-shadow: 0 10px 20px -5px rgba(20, 50, 64, 0.76);
 }
 
-
-
-
-
-
-
-
-
-
+ */
 
 
 @media only screen and (min-width: 768px) {
